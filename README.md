@@ -6,8 +6,8 @@ A Backend Application
 
 Update dependencies
 
-```
-	go mod tidy
+```bash
+go mod tidy
 ```
 ### Autoindent and format code
 
@@ -16,13 +16,13 @@ For autoformat our sources, we only need to run one line for formating our code.
 We only need to run the next line
 
 ```bash
-	gofmt -w source.go
+gofmt -w source.go
 ```
 
 or
 
 ```bash
-	gofmt -w path/to/your/application
+gofmt -w path/to/your/application
 ```
 
 ## Conventions in this project
@@ -34,4 +34,20 @@ func HelloWorld()...
 * Variables Use -> Camel Case i.e.
 ```go
 routerHandler := nil
+```
+* Folders and init file have the same name i.e.
+
+```bash
+ls user/
+# Output
+  user.go
+  ...
+  ..
+  .
+```
+* ENV -> always have the next structure:
+```
+PATH=/something/path/bin/here:$PATH
+DB_HOST=localhost
+DB_PORT=12345
 ```
