@@ -35,3 +35,13 @@ func HelloWorld()...
 ```go
 routerHandler := nil
 ```
+* Folders and init file have the same name i.e.
+
+```bash
+ls user/
+# Output
+	user.go
+	...
+	..
+	.
+```
