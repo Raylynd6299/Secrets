@@ -45,3 +45,9 @@ ls user/
   ..
   .
 ```
+* ENV -> always have the next structure:
+```
+PATH=/something/path/bin/here:$PATH
+DB_HOST=localhost
+DB_PORT=12345
+```
