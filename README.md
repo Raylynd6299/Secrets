@@ -4,7 +4,7 @@ A Backend Application
 
 ### Manage Dependency to go.mod
 
-Update dependencies 
+Update dependencies
 
 ```
 	go mod tidy
@@ -23,4 +23,15 @@ or
 
 ```bash
 	gofmt -w path/to/your/application
+```
+
+## Conventions in this project
+
+* Functions -> Use Pascal Case i.e.
+```go
+func HelloWorld()...
+```
+* Variables Use -> Camel Case i.e.
+```go
+routerHandler := nil
 ```
